@@ -6,8 +6,8 @@ app.all('*',function (req,res,next){
   res.header("Access-Control-Allow-Origin", "*");
   next();
 })
-app.get('/list', function (req,res){
-  res.sendFile(__dirname+'/1.json');
+app.get('/list1', function (req,res){
+  res.sendFile(__dirname+'/data/1.json');
 });
 var server = app.listen('3002', function () {
   console.log(server.address().address, server.address().port);
