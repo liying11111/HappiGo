@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- <meta name="viewport" content="width=device-width,user-scalable=no"> -->
+	<!--  -->
+
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet/less" type="text/css" href="css/index.less">
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/angular-route.min.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/less.min.js"></script>
+</head>
+<body ng-app="myapp">
+	<div ng-view></div>
+	<div class="less1"></div>
+	<footer>
+		<ul ng-controller="tab">		
+			<li ng-repeat="obj in arr"><a href={{obj.href}} ng-click="change(obj.index)"><div class={{obj.cla}}></div>{{obj.title}}</a></li>
+			<!-- <div id='logo'>{{count.length}}</div> -->
+		</ul>
+	</footer>
+</body>
+<script type="text/javascript">
+	var buyarr = [];
+</script>
+<script type="text/javascript" src='js/app.js'></script>
+</html>
