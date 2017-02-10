@@ -1,14 +1,10 @@
 var app = angular.module('myapp',['ngRoute']);
 app.config(['$routeProvider',function($routeProvider) {
-	$routeProvider.when('/',{templateUrl:'html/home.html',controller:'home'})
-	.when('/market',{templateUrl:'html/market.html',controller:'market'})
-	.when('/reservation',{templateUrl:'html/reservation.html',controller:'reservation'})
-	.when('/shopcar',{templateUrl:'html/shopcar.html',controller:'shopcar'})
-	.when('/mine',{templateUrl:'html/mine.html',controller:'mine'})		
+	$routeProvider.when('/',{templateUrl:'Home/home.html',controller:'home'})
+	.when('/shopcar',{templateUrl:'ShopCar/shopcar.html',controller:'shopcar'})
+	.when('/mine',{templateUrl:'Mine/mine.html',controller:'mine'})		
 }]);
 app.controller('tab',function($scope){
-	console.log(buyarr.length)
-	$scope.count = buyarr;
 	$scope.arr = [
 	{
 		cla:'footer-img1-1',
@@ -17,7 +13,7 @@ app.controller('tab',function($scope){
 		index:0		
 	},{
 		cla:'footer-img2',
-		href:'#/market',
+		href:'#/Classify',
 		title:'分类',
 		index:1
 	},{
