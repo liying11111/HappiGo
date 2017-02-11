@@ -47,12 +47,94 @@
 	overflow: hidden;
 	background: #fff;
 	margin-top: 1rem;
-	padding-bottom: 3rem;
 }
-.property .property_detail h2{
+.property h2{
     font-family: "Microsoft Yahei","Hiragino Sans GB","Helvetica Neue",Helvetica,tahoma,arial,Verdana,sans-serif,"WenQuanYi Micro Hei","\5B8B\4F53";
     font-weight: normal;
     padding:1rem;
     font-size: 1.2rem;
 	border-bottom: 1px solid #ccc;
+}
+.property .property_detail{
+	display: flex;	
+}
+.property .property_detail div{
+	flex:1;
+	text-align: center;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+.property .property_detail div:nth-child(1){
+	border-right: 1px solid #ccc;
+}
+.property .property_detail div a p{
+	color:#666;
+	padding: 0.3rem;
+}
+.property .property_detail div a p:nth-child(1){
+	color:#000;
+	
+}
+/* 晒单栏 */
+.bask_menu{
+	overflow: hidden;
+	background: #fff;
+	margin-top: 1rem;
+}
+.bask_menu h2{
+    font-family: "Microsoft Yahei","Hiragino Sans GB","Helvetica Neue",Helvetica,tahoma,arial,Verdana,sans-serif,"WenQuanYi Micro Hei","\5B8B\4F53";
+    font-weight: normal;
+    padding:1rem;
+    font-size: 1.2rem;
+	border-bottom: 1px solid #ccc;
+}
+.bask_menu .menus_detail{
+	display: flex;	
+}
+.bask_menu .menus_detail div{
+	flex:1;
+	text-align: center;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+.bask_menu .menus_detail div:nth-child(1){
+	border-right: 1px solid #ccc;
+}
+.bask_menu .menus_detail div a p{
+	color:#666;
+	padding: 0.3rem;
+}
+.bask_menu .menus_detail div a p:nth-child(1){
+	color:#000;
+	
+}
+/* 其他信息 */
+.other_message{
+	overflow: hidden;
+	background: #fff;
+	line-height: 3rem;
+}
+.other_message li{
+	border-bottom: 1px solid #ccc;
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+.other_message li a{
+	color: #666;
+}
+.other_message li span{
+	float: right;
+}
+/* help */
+.help{
+	overflow: hidden;
+	background: #fff;
+	margin-top: 1rem;
+	line-height: 3rem;
+	padding-left: 1rem;
+	color: #666;
+}
+.empty{
+	height: 3rem;
+	margin-top: 0.3rem;
 }
