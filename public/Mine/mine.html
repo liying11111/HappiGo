@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="Mine/MCSS/mine.css">
+</head>
+<body>
+	<!-- 登录处 -->
+	<div class="m_img">
+		<img src="Mine/MIMG/mine_head.jpg">
+		<p>
+			<a href="">登录</a>&nbsp;&nbsp;&nbsp;
+			<a href="">注册会员</a>
+		</p>
+	</div>
+	<!-- 订单栏 -->
+	<div class="indent">
+		<h2>全部订单 <a href="">查看全部订单</a></h2>
+		<ul>
+			<li ng-repeat="obj in arr1">
+				<img src={{obj.url}}>
+				<p>{{obj.content}}</p>
+			</li>
+		</ul>
+	</div>
+	<!-- 资产栏 -->
+	<div class="property">
+		<h2>我的资产</h2>
+		<div class="property_detail">
+			<div class="integral">
+				<a href="#">
+					<p>0</p>
+					<p>积分</p>	
+				</a>
+			</div>
+			<div class="discount_coupon">
+				<a href="#">
+					<p>6</p>
+					<p>优惠券</p>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- 晒单栏 -->
+	<div class="bask_menu">
+		<h2>我要晒单</h2>
+		<div class="menus_detail">
+			<div>
+				<a href="#">
+					<p>0</p>
+					<p>笔记</p>	
+				</a>
+			</div>
+			<div>
+				<a href="#">
+					<p>0</p>
+					<p>粉丝</p>
+				</a>
+			</div>
+			<div>
+				<a href="#">
+					<p>0</p>
+					<p>收藏</p>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- 其他信息 -->
+	<div class="other_message">
+		<ul>
+			<li><a href="#">我的消息<span>></span></a></li>
+			<li><a href="#">收获地址<span>></span></a></li>
+			<li><a href="#">商品收藏<span>></span></a></li>
+			<li><a href="#">我的足迹<span>></span></a></li>
+			<li><a href="#">会员俱乐部<span>></span></a></li>
+		</ul>
+	</div>
+	<!-- help -->
+	<div class="help">
+		帮助与反馈
+	</div>
+	<!-- 空div用于撑起页面 -->
+	<div class="empty">
+		
+	</div>
+</body>
+</html>

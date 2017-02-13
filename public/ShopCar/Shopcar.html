@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="ShopCar/SCcss/SC.css">
+</head>
+<body>
+<div id="scwrap">
+	<!-- header -->
+	<div class="header">
+		<h1>购物车</h1>
+	</div>
+	<!--  -->
+	<div><img src=""></div>
+	<div class="other">
+		<div class="other_img">
+			<img src="http://169.254.94.225:4504/img/icon_cart.png">
+			<p>购物车肚子空空的，心情不太好</p>
+		</div>
+		<span>猜你喜欢</span>
+	</div>
+	<div class="recommend_commodity">
+			<div class="commoditys" ng-repeat="obj in arr">
+				<div>
+					<img src={{obj.pic}}>
+				</div>
+				<h5>{{obj.goods_name}}</h5>
+				<p>￥{{obj.goods_price1}}&nbsp;<span>￥{{obj.goods_price2}}<span</p>
+			</div>
+	</div>
+</div>
+</body>
+</html>
+	
